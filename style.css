@@ -1,39 +1,67 @@
+html {
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
 #container-rounded {
     border-radius: 30px;
     border: 0.1px solid lightgrey;
-    padding: 10px;
-    
+    padding: 10px;    
 }
 #container-rounded:hover, #btn-lighter1:hover, #btn-lighter2:hover {
     transform: scale(1.05);
     box-shadow: 4px 4px 4px lightgrey;
 }
-.link-a a{
-    text-decoration: none;
+.link-a a{    
     color: black;
+    text-decoration: none;
     padding: 3px;    
 }
-
-.link-a a:hover{
+.link-b a{
+    text-decoration: none;
+}
+.link-a a:hover, .link-b a:hover{
     text-decoration:underline;
 }
 footer{
     background-color:rgb(240, 238, 238)
 }
 .reduce-icon img{
-    width: 1.5rem;
+    width: 1.5em;
+}
+.reduce-icon-s img{
+    width: 1em;
 }
 #btn-lighter1, #btn-lighter2 {
     background-color: rgb(250, 247, 247);
     margin: 3px;        
 }
-
 #div-logo{
     margin-top: 5rem;
 }
 #div-text div{
     padding: 3px;
 }
-#input-Find {    
+#input-find {    
     border:none
 }
+#container-relative {
+    position: relative;
+}
+
+
+/*AJUSTES RESPONSIVE*/
+
+@media screen and (max-width: 994px){
+    #div-central {      
+      order: -1;
+      margin: auto;                
+    }
+ }
+  
+
